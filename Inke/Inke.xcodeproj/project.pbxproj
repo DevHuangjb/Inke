@@ -13,6 +13,14 @@
 		E0DF0EC71F94FE6C00FA8903 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0DF0EC51F94FE6C00FA8903 /* Main.storyboard */; };
 		E0DF0EC91F94FE6C00FA8903 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0DF0EC81F94FE6C00FA8903 /* Assets.xcassets */; };
 		E0DF0ECC1F94FE6C00FA8903 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0DF0ECA1F94FE6C00FA8903 /* LaunchScreen.storyboard */; };
+		E0DF0EED1F950B0000FA8903 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF0EEC1F950B0000FA8903 /* RootTabBarController.swift */; };
+		E0DF0EEF1F950B5500FA8903 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF0EEE1F950B5500FA8903 /* BaseNavigationController.swift */; };
+		E0DF0EF31F950BB100FA8903 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF0EF21F950BB100FA8903 /* HomeController.swift */; };
+		E0DF0EF51F950BC100FA8903 /* NearController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF0EF41F950BC100FA8903 /* NearController.swift */; };
+		E0DF0EF71F950BDF00FA8903 /* LiveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF0EF61F950BDF00FA8903 /* LiveController.swift */; };
+		E0DF0EF91F950BF600FA8903 /* FollowsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF0EF81F950BF600FA8903 /* FollowsController.swift */; };
+		E0DF0EFB1F950C0600FA8903 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF0EFA1F950C0600FA8903 /* ProfileController.swift */; };
+		E0DF0EFD1F950C5400FA8903 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF0EFC1F950C5400FA8903 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +33,14 @@
 		E0DF0EC81F94FE6C00FA8903 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0DF0ECB1F94FE6C00FA8903 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0DF0ECD1F94FE6C00FA8903 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0DF0EEC1F950B0000FA8903 /* RootTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
+		E0DF0EEE1F950B5500FA8903 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		E0DF0EF21F950BB100FA8903 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		E0DF0EF41F950BC100FA8903 /* NearController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearController.swift; sourceTree = "<group>"; };
+		E0DF0EF61F950BDF00FA8903 /* LiveController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveController.swift; sourceTree = "<group>"; };
+		E0DF0EF81F950BF600FA8903 /* FollowsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowsController.swift; sourceTree = "<group>"; };
+		E0DF0EFA1F950C0600FA8903 /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		E0DF0EFC1F950C5400FA8903 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F1D116E9C4345948DB1D5064 /* Pods_Inke.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Inke.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -117,6 +133,7 @@
 		E0DF0ED51F9503FA00FA8903 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				E0DF0EF81F950BF600FA8903 /* FollowsController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -148,6 +165,7 @@
 		E0DF0ED91F9503FA00FA8903 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				E0DF0EF21F950BB100FA8903 /* HomeController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -186,6 +204,7 @@
 		E0DF0EDE1F9503FA00FA8903 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				E0DF0EF61F950BDF00FA8903 /* LiveController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -207,6 +226,7 @@
 		E0DF0EE11F9503FA00FA8903 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				E0DF0EEB1F950AD000FA8903 /* BaseController */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -224,6 +244,7 @@
 		E0DF0EE31F9503FA00FA8903 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				E0DF0EF41F950BC100FA8903 /* NearController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -255,6 +276,7 @@
 		E0DF0EE71F9503FA00FA8903 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				E0DF0EFA1F950C0600FA8903 /* ProfileController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -278,6 +300,16 @@
 			children = (
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		E0DF0EEB1F950AD000FA8903 /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				E0DF0EEC1F950B0000FA8903 /* RootTabBarController.swift */,
+				E0DF0EEE1F950B5500FA8903 /* BaseNavigationController.swift */,
+				E0DF0EFC1F950C5400FA8903 /* BaseViewController.swift */,
+			);
+			path = BaseController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,8 +449,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0DF0EEF1F950B5500FA8903 /* BaseNavigationController.swift in Sources */,
+				E0DF0EF51F950BC100FA8903 /* NearController.swift in Sources */,
 				E0DF0EC41F94FE6C00FA8903 /* ViewController.swift in Sources */,
+				E0DF0EF71F950BDF00FA8903 /* LiveController.swift in Sources */,
+				E0DF0EF91F950BF600FA8903 /* FollowsController.swift in Sources */,
+				E0DF0EFD1F950C5400FA8903 /* BaseViewController.swift in Sources */,
+				E0DF0EFB1F950C0600FA8903 /* ProfileController.swift in Sources */,
+				E0DF0EED1F950B0000FA8903 /* RootTabBarController.swift in Sources */,
 				E0DF0EC21F94FE6C00FA8903 /* AppDelegate.swift in Sources */,
+				E0DF0EF31F950BB100FA8903 /* HomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
