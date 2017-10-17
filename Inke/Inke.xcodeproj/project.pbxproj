@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C4324781F95A1AD006C2DEF /* GlobalFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4324771F95A1AD006C2DEF /* GlobalFunc.swift */; };
+		1C43247A1F95A935006C2DEF /* GlobalDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4324791F95A935006C2DEF /* GlobalDefinition.swift */; };
+		1C43247F1F95B413006C2DEF /* RootTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C43247E1F95B413006C2DEF /* RootTabBar.swift */; };
+		1C4324811F95B422006C2DEF /* RootTabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C4324801F95B422006C2DEF /* RootTabBar.xib */; };
 		3D25474CA2104651702811E3 /* Pods_Inke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D116E9C4345948DB1D5064 /* Pods_Inke.framework */; };
 		E0DF0EC21F94FE6C00FA8903 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF0EC11F94FE6C00FA8903 /* AppDelegate.swift */; };
 		E0DF0EC41F94FE6C00FA8903 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF0EC31F94FE6C00FA8903 /* ViewController.swift */; };
@@ -24,6 +28,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C4324771F95A1AD006C2DEF /* GlobalFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFunc.swift; sourceTree = "<group>"; };
+		1C4324791F95A935006C2DEF /* GlobalDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalDefinition.swift; sourceTree = "<group>"; };
+		1C43247E1F95B413006C2DEF /* RootTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBar.swift; sourceTree = "<group>"; };
+		1C4324801F95B422006C2DEF /* RootTabBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootTabBar.xib; sourceTree = "<group>"; };
 		B1D6979AC0811A63F689C4EA /* Pods-Inke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Inke.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Inke/Pods-Inke.debug.xcconfig"; sourceTree = "<group>"; };
 		D9D7930B6B69C6D7487C1A57 /* Pods-Inke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Inke.release.xcconfig"; path = "Pods/Target Support Files/Pods-Inke/Pods-Inke.release.xcconfig"; sourceTree = "<group>"; };
 		E0DF0EBE1F94FE6C00FA8903 /* Inke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inke.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +64,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C4324761F95A19B006C2DEF /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				1C4324771F95A1AD006C2DEF /* GlobalFunc.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		1C43247D1F95B3D2006C2DEF /* views */ = {
+			isa = PBXGroup;
+			children = (
+				1C43247E1F95B413006C2DEF /* RootTabBar.swift */,
+				1C4324801F95B422006C2DEF /* RootTabBar.xib */,
+			);
+			name = views;
+			path = Inke/Class/Main/views;
+			sourceTree = SOURCE_ROOT;
+		};
 		BD1B5316DB6A87A2533671E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,8 +134,7 @@
 		E0DF0ED31F9503FA00FA8903 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				E0DF0EDC1F9503FA00FA8903 /* Lib */,
-				E0DF0EEA1F9503FA00FA8903 /* Tool */,
+				1C4324761F95A19B006C2DEF /* Tools */,
 				E0DF0ED81F9503FA00FA8903 /* Home */,
 				E0DF0EE21F9503FA00FA8903 /* Near */,
 				E0DF0EDD1F9503FA00FA8903 /* Live */,
@@ -184,13 +209,6 @@
 			path = views;
 			sourceTree = "<group>";
 		};
-		E0DF0EDC1F9503FA00FA8903 /* Lib */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Lib;
-			sourceTree = "<group>";
-		};
 		E0DF0EDD1F9503FA00FA8903 /* Live */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				E0DF0EEB1F950AD000FA8903 /* BaseController */,
+				1C4324791F95A935006C2DEF /* GlobalDefinition.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -295,16 +314,10 @@
 			path = views;
 			sourceTree = "<group>";
 		};
-		E0DF0EEA1F9503FA00FA8903 /* Tool */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tool;
-			sourceTree = "<group>";
-		};
 		E0DF0EEB1F950AD000FA8903 /* BaseController */ = {
 			isa = PBXGroup;
 			children = (
+				1C43247D1F95B3D2006C2DEF /* views */,
 				E0DF0EEC1F950B0000FA8903 /* RootTabBarController.swift */,
 				E0DF0EEE1F950B5500FA8903 /* BaseNavigationController.swift */,
 				E0DF0EFC1F950C5400FA8903 /* BaseViewController.swift */,
@@ -374,6 +387,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C4324811F95B422006C2DEF /* RootTabBar.xib in Resources */,
 				E0DF0ECC1F94FE6C00FA8903 /* LaunchScreen.storyboard in Resources */,
 				E0DF0EC91F94FE6C00FA8903 /* Assets.xcassets in Resources */,
 				E0DF0EC71F94FE6C00FA8903 /* Main.storyboard in Resources */,
@@ -451,12 +465,15 @@
 			files = (
 				E0DF0EEF1F950B5500FA8903 /* BaseNavigationController.swift in Sources */,
 				E0DF0EF51F950BC100FA8903 /* NearController.swift in Sources */,
+				1C4324781F95A1AD006C2DEF /* GlobalFunc.swift in Sources */,
+				1C43247A1F95A935006C2DEF /* GlobalDefinition.swift in Sources */,
 				E0DF0EC41F94FE6C00FA8903 /* ViewController.swift in Sources */,
 				E0DF0EF71F950BDF00FA8903 /* LiveController.swift in Sources */,
 				E0DF0EF91F950BF600FA8903 /* FollowsController.swift in Sources */,
 				E0DF0EFD1F950C5400FA8903 /* BaseViewController.swift in Sources */,
 				E0DF0EFB1F950C0600FA8903 /* ProfileController.swift in Sources */,
 				E0DF0EED1F950B0000FA8903 /* RootTabBarController.swift in Sources */,
+				1C43247F1F95B413006C2DEF /* RootTabBar.swift in Sources */,
 				E0DF0EC21F94FE6C00FA8903 /* AppDelegate.swift in Sources */,
 				E0DF0EF31F950BB100FA8903 /* HomeController.swift in Sources */,
 			);
@@ -586,7 +603,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.biaoge.Inke;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -599,7 +616,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.biaoge.Inke;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

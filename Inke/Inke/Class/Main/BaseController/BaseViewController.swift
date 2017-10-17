@@ -7,22 +7,13 @@
 //
 
 import UIKit
-protocol BaseViewControllerProtocol {
-    func initUI()
-}
 
-class BaseViewController: UIViewController,BaseViewControllerProtocol {
+class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        initUI()
-    }
-    
-//MARK:- 设置UI
-    func initUI() {
-        view.backgroundColor = UIColor.red
     }
 
 }

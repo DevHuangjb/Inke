@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="JWQ-gb-mop" customClass="RootTabBar" customModule="Inke" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NPK-xt-5mk">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="0.5"/>
+                    <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="txD-5z-dFu"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2b5-HX-HCA">
+                    <rect key="frame" x="151.5" y="-23" width="72" height="72"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="72" id="YFm-3P-AUs"/>
+                        <constraint firstAttribute="width" secondItem="2b5-HX-HCA" secondAttribute="height" multiplier="1:1" id="t8i-aW-A0m"/>
+                    </constraints>
+                    <state key="normal" image="tab_launch"/>
+                    <connections>
+                        <action selector="centerBtnClick:" destination="JWQ-gb-mop" eventType="touchUpInside" id="jhL-6w-fRu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="100" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZy-A6-zxx" customClass="TabBarButton" customModule="Inke" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="76" height="49"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="首页" image="tab_live">
+                        <color key="titleColor" red="0.63130217790603638" green="0.63141316175460815" blue="0.63129514455795288" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" image="tab_live_p">
+                        <color key="titleColor" red="0.043137254901960784" green="0.74292045831680298" blue="0.91854852437973022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="itemClick:" destination="JWQ-gb-mop" eventType="touchUpInside" id="fEl-4Z-4d9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VdD-z1-bvw" customClass="TabBarButton" customModule="Inke" customModuleProvider="target">
+                    <rect key="frame" x="76" y="0.0" width="75.5" height="49"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="附近" image="tab_near">
+                        <color key="titleColor" red="0.63130217790603638" green="0.63141316175460815" blue="0.63129514455795288" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" image="tab_near_p">
+                        <color key="titleColor" red="0.043137254901960784" green="0.74292045831680298" blue="0.91854852437973022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="itemClick:" destination="JWQ-gb-mop" eventType="touchUpInside" id="iXa-J1-3lt"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pN4-02-Xbj" customClass="TabBarButton" customModule="Inke" customModuleProvider="target">
+                    <rect key="frame" x="223.5" y="0.0" width="76" height="49"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="关注" image="tab_following">
+                        <color key="titleColor" red="0.63130217790603638" green="0.63141316175460815" blue="0.63129514455795288" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" image="tab_following_p">
+                        <color key="titleColor" red="0.043137254901960784" green="0.74292045831680298" blue="0.91854852437973022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="itemClick:" destination="JWQ-gb-mop" eventType="touchUpInside" id="sc9-7F-Zcq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WP1-KC-T2x" customClass="TabBarButton" customModule="Inke" customModuleProvider="target">
+                    <rect key="frame" x="299.5" y="0.0" width="75.5" height="49"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="我" image="tab_me">
+                        <color key="titleColor" red="0.63130217790603638" green="0.63141316175460815" blue="0.63129514455795288" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" image="tab_me_p">
+                        <color key="titleColor" red="0.043137254901960784" green="0.74292045831680298" blue="0.91854852437973022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="itemClick:" destination="JWQ-gb-mop" eventType="touchUpInside" id="IJc-wP-jkr"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="2b5-HX-HCA" firstAttribute="leading" secondItem="VdD-z1-bvw" secondAttribute="trailing" id="Cp4-cM-su0"/>
+                <constraint firstItem="WP1-KC-T2x" firstAttribute="top" secondItem="CX0-gx-plJ" secondAttribute="top" id="D8M-9K-bXE"/>
+                <constraint firstItem="fZy-A6-zxx" firstAttribute="top" secondItem="CX0-gx-plJ" secondAttribute="top" id="EeL-Il-fD7"/>
+                <constraint firstItem="CX0-gx-plJ" firstAttribute="trailing" secondItem="WP1-KC-T2x" secondAttribute="trailing" id="HsQ-US-bym"/>
+                <constraint firstItem="fZy-A6-zxx" firstAttribute="leading" secondItem="CX0-gx-plJ" secondAttribute="leading" id="IiN-JD-cuh"/>
+                <constraint firstItem="NPK-xt-5mk" firstAttribute="top" secondItem="JWQ-gb-mop" secondAttribute="top" id="KOL-OF-ARX"/>
+                <constraint firstItem="VdD-z1-bvw" firstAttribute="bottom" secondItem="CX0-gx-plJ" secondAttribute="bottom" id="N2R-Gz-aUX"/>
+                <constraint firstItem="VdD-z1-bvw" firstAttribute="width" secondItem="fZy-A6-zxx" secondAttribute="width" id="Ohh-w2-i1A"/>
+                <constraint firstItem="fZy-A6-zxx" firstAttribute="bottom" secondItem="CX0-gx-plJ" secondAttribute="bottom" id="Rf1-pt-WMk"/>
+                <constraint firstItem="pN4-02-Xbj" firstAttribute="bottom" secondItem="CX0-gx-plJ" secondAttribute="bottom" id="Sgl-a3-ceG"/>
+                <constraint firstItem="WP1-KC-T2x" firstAttribute="leading" secondItem="pN4-02-Xbj" secondAttribute="trailing" id="Vqt-Y1-7B3"/>
+                <constraint firstItem="NPK-xt-5mk" firstAttribute="leading" secondItem="JWQ-gb-mop" secondAttribute="leading" id="Yhf-5i-dlf"/>
+                <constraint firstItem="CX0-gx-plJ" firstAttribute="trailing" secondItem="NPK-xt-5mk" secondAttribute="trailing" id="Zb9-w2-WHn"/>
+                <constraint firstItem="VdD-z1-bvw" firstAttribute="top" secondItem="CX0-gx-plJ" secondAttribute="top" id="bUm-Im-wYW"/>
+                <constraint firstItem="pN4-02-Xbj" firstAttribute="leading" secondItem="2b5-HX-HCA" secondAttribute="trailing" id="bcz-Bw-87h"/>
+                <constraint firstItem="pN4-02-Xbj" firstAttribute="top" secondItem="CX0-gx-plJ" secondAttribute="top" id="fhs-HP-zmr"/>
+                <constraint firstItem="2b5-HX-HCA" firstAttribute="centerX" secondItem="CX0-gx-plJ" secondAttribute="centerX" id="hFB-NI-yAU"/>
+                <constraint firstAttribute="bottom" secondItem="2b5-HX-HCA" secondAttribute="bottom" id="mJ3-5J-AxE"/>
+                <constraint firstItem="VdD-z1-bvw" firstAttribute="leading" secondItem="fZy-A6-zxx" secondAttribute="trailing" id="qx6-5J-ech"/>
+                <constraint firstItem="WP1-KC-T2x" firstAttribute="bottom" secondItem="CX0-gx-plJ" secondAttribute="bottom" id="uW9-gb-IzZ"/>
+                <constraint firstItem="WP1-KC-T2x" firstAttribute="width" secondItem="fZy-A6-zxx" secondAttribute="width" id="zIt-iU-OSp"/>
+                <constraint firstItem="pN4-02-Xbj" firstAttribute="width" secondItem="fZy-A6-zxx" secondAttribute="width" id="zV0-p4-fgD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="CX0-gx-plJ"/>
+            <connections>
+                <outlet property="centerBtn" destination="2b5-HX-HCA" id="orw-Mk-UFA"/>
+            </connections>
+            <point key="canvasLocation" x="56.5" y="18.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tab_following" width="24" height="24"/>
+        <image name="tab_following_p" width="24" height="24"/>
+        <image name="tab_launch" width="68" height="68"/>
+        <image name="tab_live" width="24" height="24"/>
+        <image name="tab_live_p" width="24" height="24"/>
+        <image name="tab_me" width="24" height="24"/>
+        <image name="tab_me_p" width="24" height="24"/>
+        <image name="tab_near" width="24" height="24"/>
+        <image name="tab_near_p" width="24" height="24"/>
+    </resources>
+</document>

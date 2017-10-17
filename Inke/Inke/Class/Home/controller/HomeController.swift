@@ -15,9 +15,5 @@ class HomeController: BaseViewController {
 
         // Do any additional setup after loading the view.
     }
-    
-    override func initUI() {
-        view.backgroundColor = UIColor.green
-    }
 
 }
