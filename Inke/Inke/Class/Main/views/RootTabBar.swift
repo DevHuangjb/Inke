@@ -36,15 +36,12 @@ class RootTabBar: UIView {
     }
     
     @IBAction func itemClick(_ sender: UIButton) {
-        
         for subView in self.subviews {
             if let subBtn : UIButton = subView as? UIButton{
                 subBtn.isSelected = false
             }
-            
         }
         sender.isSelected = true
-        
         animation(btn: sender)
     }
     
@@ -76,7 +73,6 @@ class RootTabBar: UIView {
             if distanceBetweenTwoPoints(point1: CGPoint.init(x: 36, y: 36), point2: pointInCenterBtn) < 32{
                 return centerBtn
             }
-            return view
         }
         return view
     }

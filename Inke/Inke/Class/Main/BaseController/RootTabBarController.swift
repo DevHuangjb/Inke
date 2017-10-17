@@ -43,8 +43,8 @@ class RootTabBarController: UITabBarController {
                 return
             }
             let vc = vcType.init()
-            vc.title = vcName
-            addChildViewController(vc)
+            let nav = BaseNavigationController.init(rootViewController: vc)
+            addChildViewController(nav)
         }
     }
 

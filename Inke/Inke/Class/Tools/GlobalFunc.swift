@@ -23,3 +23,7 @@ func distanceBetweenTwoPoints(point1:CGPoint,point2:CGPoint) -> CGFloat {
     let distance : CGFloat = sqrt((xDist * xDist) + (yDist * yDist))
     return distance
 }
+
+func randomColor () -> UIColor {
+    return UIColor(red: CGFloat(arc4random_uniform(255))/255.0, green: CGFloat(arc4random_uniform(255))/255.0, blue: CGFloat(arc4random_uniform(255))/255.0, alpha: 1)
+}
