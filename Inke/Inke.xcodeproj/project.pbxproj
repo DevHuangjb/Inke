@@ -13,6 +13,7 @@
 		1C4324811F95B422006C2DEF /* RootTabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C4324801F95B422006C2DEF /* RootTabBar.xib */; };
 		1CF61B101F96EC0A0055EC78 /* UIView+AB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF61B0F1F96EC0A0055EC78 /* UIView+AB.swift */; };
 		3D25474CA2104651702811E3 /* Pods_Inke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D116E9C4345948DB1D5064 /* Pods_Inke.framework */; };
+		E01315A61F97B59200788A28 /* ScrollSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01315A51F97B59200788A28 /* ScrollSegmentView.swift */; };
 		E0DF0EC21F94FE6C00FA8903 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF0EC11F94FE6C00FA8903 /* AppDelegate.swift */; };
 		E0DF0EC41F94FE6C00FA8903 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF0EC31F94FE6C00FA8903 /* ViewController.swift */; };
 		E0DF0EC71F94FE6C00FA8903 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0DF0EC51F94FE6C00FA8903 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 		1CF61B0F1F96EC0A0055EC78 /* UIView+AB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AB.swift"; sourceTree = "<group>"; };
 		B1D6979AC0811A63F689C4EA /* Pods-Inke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Inke.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Inke/Pods-Inke.debug.xcconfig"; sourceTree = "<group>"; };
 		D9D7930B6B69C6D7487C1A57 /* Pods-Inke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Inke.release.xcconfig"; path = "Pods/Target Support Files/Pods-Inke/Pods-Inke.release.xcconfig"; sourceTree = "<group>"; };
+		E01315A51F97B59200788A28 /* ScrollSegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollSegmentView.swift; sourceTree = "<group>"; };
 		E0DF0EBE1F94FE6C00FA8903 /* Inke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0DF0EC11F94FE6C00FA8903 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0DF0EC31F94FE6C00FA8903 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			children = (
 				1C43247E1F95B413006C2DEF /* RootTabBar.swift */,
 				1C4324801F95B422006C2DEF /* RootTabBar.xib */,
+				E01315A51F97B59200788A28 /* ScrollSegmentView.swift */,
 			);
 			name = views;
 			path = Inke/Class/Main/views;
@@ -247,6 +250,7 @@
 		E0DF0EE11F9503FA00FA8903 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				1C43247D1F95B3D2006C2DEF /* views */,
 				E0DF0EEB1F950AD000FA8903 /* BaseController */,
 				1C4324791F95A935006C2DEF /* GlobalDefinition.swift */,
 			);
@@ -320,7 +324,6 @@
 		E0DF0EEB1F950AD000FA8903 /* BaseController */ = {
 			isa = PBXGroup;
 			children = (
-				1C43247D1F95B3D2006C2DEF /* views */,
 				E0DF0EEC1F950B0000FA8903 /* RootTabBarController.swift */,
 				E0DF0EEE1F950B5500FA8903 /* BaseNavigationController.swift */,
 				E0DF0EFC1F950C5400FA8903 /* BaseViewController.swift */,
@@ -479,6 +482,7 @@
 				E0DF0EFB1F950C0600FA8903 /* ProfileController.swift in Sources */,
 				E0DF0EED1F950B0000FA8903 /* RootTabBarController.swift in Sources */,
 				1C43247F1F95B413006C2DEF /* RootTabBar.swift in Sources */,
+				E01315A61F97B59200788A28 /* ScrollSegmentView.swift in Sources */,
 				E0DF0EC21F94FE6C00FA8903 /* AppDelegate.swift in Sources */,
 				E0DF0EF31F950BB100FA8903 /* HomeController.swift in Sources */,
 			);
