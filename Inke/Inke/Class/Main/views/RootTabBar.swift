@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol RootTabBarDelegate: NSObjectProtocol {
+    func rootTabBarSelectedIndex(index: Int)
+}
+
 class TabBarButton: UIButton {
     private let imageW : CGFloat = 24
     private let contentMargin : CGFloat = 5
@@ -30,6 +34,7 @@ class TabBarButton: UIButton {
 class RootTabBar: UIView {
     @IBOutlet weak var centerBtn: UIButton!
     var selectedBtn : UIButton?
+    weak var delegate:RootTabBarDelegate?
     
     static func GetView() -> RootTabBar {
         return Bundle.main.loadNibNamed("RootTabBar", owner: nil, options: nil)?.first as! RootTabBar
@@ -43,6 +48,7 @@ class RootTabBar: UIView {
         }
         sender.isSelected = true
         animation(btn: sender)
+        delegate?.rootTabBarSelectedIndex(index: sender.tag - 100)
     }
     
     
@@ -77,8 +83,8 @@ class RootTabBar: UIView {
         return view
     }
     
-    @IBAction func centerBtnClick(_ sender: Any) {
-        print("center click")
+    @IBAction func centerBtnClick(_ sender: UIButton) {
+        delegate?.rootTabBarSelectedIndex(index: sender.tag - 100)
     }
     
     

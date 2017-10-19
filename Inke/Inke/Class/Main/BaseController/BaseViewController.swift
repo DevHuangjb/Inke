@@ -16,5 +16,11 @@ class BaseViewController: UIViewController {
         // Do any additional setup after loading the view.
         automaticallyAdjustsScrollViewInsets = false
     }
+    
+    func setNavBarToMain() {
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage.init(named: "main_tab_back"), for: .default)
+        
+    }
 
 }

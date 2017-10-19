@@ -34,6 +34,7 @@ class RootTabBarController: UITabBarController {
         let tabbar = RootTabBar.GetView()
         view.addSubview(tabbar)
         tabbar.frame = CGRect(x: 0, y: SCREEN_HEIGHT - TAB_BAR_HEIGHT, width:SCREEN_WIDTH , height:TAB_BAR_HEIGHT)
+        tabbar.delegate = self
     }
     
     /// 添加子视图
@@ -47,5 +48,10 @@ class RootTabBarController: UITabBarController {
             addChildViewController(nav)
         }
     }
+}
 
+extension RootTabBarController: RootTabBarDelegate {
+    func rootTabBarSelectedIndex(index: Int){
+        selectedIndex = index
+    }
 }

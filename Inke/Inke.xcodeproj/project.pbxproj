@@ -11,6 +11,12 @@
 		1C43247A1F95A935006C2DEF /* GlobalDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4324791F95A935006C2DEF /* GlobalDefinition.swift */; };
 		1C43247F1F95B413006C2DEF /* RootTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C43247E1F95B413006C2DEF /* RootTabBar.swift */; };
 		1C4324811F95B422006C2DEF /* RootTabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C4324801F95B422006C2DEF /* RootTabBar.xib */; };
+		1CB245C11F9885C900F92D29 /* SegmentContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB245C01F9885C900F92D29 /* SegmentContentView.swift */; };
+		1CB245C31F98898600F92D29 /* RecommendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB245C21F98898600F92D29 /* RecommendController.swift */; };
+		1CB245C51F9889B200F92D29 /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB245C41F9889B200F92D29 /* VideoController.swift */; };
+		1CB245C71F9889E400F92D29 /* HotGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB245C61F9889E400F92D29 /* HotGameController.swift */; };
+		1CB245C91F988A5000F92D29 /* FoundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB245C81F988A5000F92D29 /* FoundController.swift */; };
+		1CB245CB1F988A7100F92D29 /* LocalCityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB245CA1F988A7100F92D29 /* LocalCityController.swift */; };
 		1CF61B101F96EC0A0055EC78 /* UIView+AB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF61B0F1F96EC0A0055EC78 /* UIView+AB.swift */; };
 		3D25474CA2104651702811E3 /* Pods_Inke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D116E9C4345948DB1D5064 /* Pods_Inke.framework */; };
 		E01315A61F97B59200788A28 /* ScrollSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01315A51F97B59200788A28 /* ScrollSegmentView.swift */; };
@@ -34,6 +40,12 @@
 		1C4324791F95A935006C2DEF /* GlobalDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalDefinition.swift; sourceTree = "<group>"; };
 		1C43247E1F95B413006C2DEF /* RootTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBar.swift; sourceTree = "<group>"; };
 		1C4324801F95B422006C2DEF /* RootTabBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootTabBar.xib; sourceTree = "<group>"; };
+		1CB245C01F9885C900F92D29 /* SegmentContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentContentView.swift; sourceTree = "<group>"; };
+		1CB245C21F98898600F92D29 /* RecommendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendController.swift; sourceTree = "<group>"; };
+		1CB245C41F9889B200F92D29 /* VideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
+		1CB245C61F9889E400F92D29 /* HotGameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotGameController.swift; sourceTree = "<group>"; };
+		1CB245C81F988A5000F92D29 /* FoundController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundController.swift; sourceTree = "<group>"; };
+		1CB245CA1F988A7100F92D29 /* LocalCityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalCityController.swift; sourceTree = "<group>"; };
 		1CF61B0F1F96EC0A0055EC78 /* UIView+AB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AB.swift"; sourceTree = "<group>"; };
 		B1D6979AC0811A63F689C4EA /* Pods-Inke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Inke.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Inke/Pods-Inke.debug.xcconfig"; sourceTree = "<group>"; };
 		D9D7930B6B69C6D7487C1A57 /* Pods-Inke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Inke.release.xcconfig"; path = "Pods/Target Support Files/Pods-Inke/Pods-Inke.release.xcconfig"; sourceTree = "<group>"; };
@@ -83,6 +95,7 @@
 				1C43247E1F95B413006C2DEF /* RootTabBar.swift */,
 				1C4324801F95B422006C2DEF /* RootTabBar.xib */,
 				E01315A51F97B59200788A28 /* ScrollSegmentView.swift */,
+				1CB245C01F9885C900F92D29 /* SegmentContentView.swift */,
 			);
 			name = views;
 			path = Inke/Class/Main/views;
@@ -197,6 +210,11 @@
 			isa = PBXGroup;
 			children = (
 				E0DF0EF21F950BB100FA8903 /* HomeController.swift */,
+				1CB245C21F98898600F92D29 /* RecommendController.swift */,
+				1CB245C41F9889B200F92D29 /* VideoController.swift */,
+				1CB245C61F9889E400F92D29 /* HotGameController.swift */,
+				1CB245C81F988A5000F92D29 /* FoundController.swift */,
+				1CB245CA1F988A7100F92D29 /* LocalCityController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -471,18 +489,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0DF0EEF1F950B5500FA8903 /* BaseNavigationController.swift in Sources */,
+				1CB245C51F9889B200F92D29 /* VideoController.swift in Sources */,
 				1CF61B101F96EC0A0055EC78 /* UIView+AB.swift in Sources */,
+				1CB245CB1F988A7100F92D29 /* LocalCityController.swift in Sources */,
 				E0DF0EF51F950BC100FA8903 /* NearController.swift in Sources */,
+				1CB245C91F988A5000F92D29 /* FoundController.swift in Sources */,
 				1C4324781F95A1AD006C2DEF /* GlobalFunc.swift in Sources */,
 				1C43247A1F95A935006C2DEF /* GlobalDefinition.swift in Sources */,
 				E0DF0EC41F94FE6C00FA8903 /* ViewController.swift in Sources */,
 				E0DF0EF71F950BDF00FA8903 /* LiveController.swift in Sources */,
+				1CB245C31F98898600F92D29 /* RecommendController.swift in Sources */,
 				E0DF0EF91F950BF600FA8903 /* FollowsController.swift in Sources */,
 				E0DF0EFD1F950C5400FA8903 /* BaseViewController.swift in Sources */,
 				E0DF0EFB1F950C0600FA8903 /* ProfileController.swift in Sources */,
 				E0DF0EED1F950B0000FA8903 /* RootTabBarController.swift in Sources */,
 				1C43247F1F95B413006C2DEF /* RootTabBar.swift in Sources */,
+				1CB245C11F9885C900F92D29 /* SegmentContentView.swift in Sources */,
 				E01315A61F97B59200788A28 /* ScrollSegmentView.swift in Sources */,
+				1CB245C71F9889E400F92D29 /* HotGameController.swift in Sources */,
 				E0DF0EC21F94FE6C00FA8903 /* AppDelegate.swift in Sources */,
 				E0DF0EF31F950BB100FA8903 /* HomeController.swift in Sources */,
 			);
