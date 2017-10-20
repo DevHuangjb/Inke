@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Masonry
 
 let itemMargin: CGFloat = 20
 let itemFontSize: CGFloat = 15.0

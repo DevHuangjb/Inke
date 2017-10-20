@@ -7,30 +7,50 @@
 //
 
 import UIKit
+import IGListKit
 
-class RecommendController: BaseViewController {
+class RecommendController: BaseViewController, ListAdapterDataSource {
+    
+    lazy var adapter: ListAdapter = {
+        return ListAdapter(updater: ListAdapterUpdater(), viewController: self)
+    }()
+    
+    let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
+    
+    //0:在看 1：在直播 2：headerview 3：scroll
+//    let data: [Any] = [
+//        "2","0","1","0","0","3","0","1","1","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0"
+//    ]
+    let data: [Any] = [
+        "df","dff","sdfsdf","efefe","hgghg"
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         view.backgroundColor = randomColor()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        view.addSubview(collectionView)
+        adapter.collectionView = collectionView
+        adapter.dataSource = self
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        collectionView.frame = view.bounds
+        collectionView.backgroundColor = UIColor.white
     }
-    */
+    
+    // MARK:- ListAdapterDataSource
+    
+    func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
+        return data.map { $0 as! ListDiffable}
+    }
+    
+    func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
+        return RecommendHeaderSectionController()
+    }
+    
+    func emptyView(for listAdapter: ListAdapter) -> UIView? { return nil }
 
 }
