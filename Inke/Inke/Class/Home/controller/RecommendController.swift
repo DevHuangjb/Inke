@@ -8,6 +8,7 @@
 
 import UIKit
 import IGListKit
+import SwiftyJSON
 
 class RecommendController: BaseViewController, ListAdapterDataSource {
     
@@ -21,9 +22,7 @@ class RecommendController: BaseViewController, ListAdapterDataSource {
 //    let data: [Any] = [
 //        "2","0","1","0","0","3","0","1","1","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0"
 //    ]
-    let data: [Any] = [
-        "df","dff","sdfsdf","efefe","hgghg"
-    ]
+    var data: [RecommendCardModel] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,22 +32,57 @@ class RecommendController: BaseViewController, ListAdapterDataSource {
         view.addSubview(collectionView)
         adapter.collectionView = collectionView
         adapter.dataSource = self
+        
+        NetworkTools.requestData(.get, URLString: card_recommend, parameters: nil, success: { (result) in
+            guard let temp = result else {
+                return
+            }
+            let json = JSON(temp)
+            let cards = json["cards"].arrayValue
+            for card in cards {
+                let cardModel = RecommendCardModel(json: card)
+                if cardModel.style == 1 || cardModel.style == 4 {
+                    self.data.append(cardModel)
+                }
+            }
+            self.adapter.performUpdates(animated: true, completion: nil)
+        }) { (error) in
+            print(error!)
+        }
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         collectionView.frame = view.bounds
         collectionView.backgroundColor = UIColor.white
+        
+
     }
     
     // MARK:- ListAdapterDataSource
     
     func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
-        return data.map { $0 as! ListDiffable}
+//        return data.map { $0 as! ListDiffable}
+        var tempArr:Array = [Any]()
+        tempArr.append("header")
+        tempArr.append("ad")
+        if data.count > 0 {
+            tempArr.append(data)
+        }
+        return tempArr.map { $0 as! ListDiffable}
     }
     
     func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
-        return RecommendHeaderSectionController()
+        
+        if let str: String = object as? String {
+            if str.hasPrefix("header"){
+                return RecommendHeaderSectionController()
+            }else if str.hasPrefix("ad") {
+                return RecommendAdSectionController()
+            }
+        }
+        
+        return RecommendCommonSectionController()
     }
     
     func emptyView(for listAdapter: ListAdapter) -> UIView? { return nil }

@@ -23,6 +23,12 @@
 		1CF61B101F96EC0A0055EC78 /* UIView+AB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF61B0F1F96EC0A0055EC78 /* UIView+AB.swift */; };
 		3D25474CA2104651702811E3 /* Pods_Inke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D116E9C4345948DB1D5064 /* Pods_Inke.framework */; };
 		E01315A61F97B59200788A28 /* ScrollSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01315A51F97B59200788A28 /* ScrollSegmentView.swift */; };
+		E0BE00D21F9C6EDF00C67C48 /* RecommendAdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BE00D01F9C6EDF00C67C48 /* RecommendAdCell.swift */; };
+		E0BE00D31F9C6EDF00C67C48 /* RecommendAdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0BE00D11F9C6EDF00C67C48 /* RecommendAdCell.xib */; };
+		E0BE00D51F9C700C00C67C48 /* RecommendAdSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BE00D41F9C700C00C67C48 /* RecommendAdSectionController.swift */; };
+		E0BE00D91F9C713000C67C48 /* RecommendCommonSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BE00D81F9C713000C67C48 /* RecommendCommonSectionController.swift */; };
+		E0BE00DB1F9C7C4100C67C48 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BE00DA1F9C7C4100C67C48 /* NetworkTools.swift */; };
+		E0BE00DE1F9CBDA300C67C48 /* RecommendCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BE00DD1F9CBDA300C67C48 /* RecommendCardModel.swift */; };
 		E0DF0EC21F94FE6C00FA8903 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF0EC11F94FE6C00FA8903 /* AppDelegate.swift */; };
 		E0DF0EC41F94FE6C00FA8903 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF0EC31F94FE6C00FA8903 /* ViewController.swift */; };
 		E0DF0EC71F94FE6C00FA8903 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0DF0EC51F94FE6C00FA8903 /* Main.storyboard */; };
@@ -36,6 +42,11 @@
 		E0DF0EF91F950BF600FA8903 /* FollowsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF0EF81F950BF600FA8903 /* FollowsController.swift */; };
 		E0DF0EFB1F950C0600FA8903 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF0EFA1F950C0600FA8903 /* ProfileController.swift */; };
 		E0DF0EFD1F950C5400FA8903 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF0EFC1F950C5400FA8903 /* BaseViewController.swift */; };
+		E0F326231F9B0BC00011A013 /* RecommendLiveGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F326211F9B0BC00011A013 /* RecommendLiveGroupCell.swift */; };
+		E0F326241F9B0BC00011A013 /* RecommendLiveGroupCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0F326221F9B0BC00011A013 /* RecommendLiveGroupCell.xib */; };
+		E0F326261F9B12120011A013 /* UIKit+HeroExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F326251F9B12120011A013 /* UIKit+HeroExamples.swift */; };
+		E0F326291F9B4F7B0011A013 /* RecommendLiveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F326271F9B4F7B0011A013 /* RecommendLiveCell.swift */; };
+		E0F3262A1F9B4F7B0011A013 /* RecommendLiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0F326281F9B4F7B0011A013 /* RecommendLiveCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +67,12 @@
 		B1D6979AC0811A63F689C4EA /* Pods-Inke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Inke.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Inke/Pods-Inke.debug.xcconfig"; sourceTree = "<group>"; };
 		D9D7930B6B69C6D7487C1A57 /* Pods-Inke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Inke.release.xcconfig"; path = "Pods/Target Support Files/Pods-Inke/Pods-Inke.release.xcconfig"; sourceTree = "<group>"; };
 		E01315A51F97B59200788A28 /* ScrollSegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollSegmentView.swift; sourceTree = "<group>"; };
+		E0BE00D01F9C6EDF00C67C48 /* RecommendAdCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendAdCell.swift; sourceTree = "<group>"; };
+		E0BE00D11F9C6EDF00C67C48 /* RecommendAdCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendAdCell.xib; sourceTree = "<group>"; };
+		E0BE00D41F9C700C00C67C48 /* RecommendAdSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendAdSectionController.swift; sourceTree = "<group>"; };
+		E0BE00D81F9C713000C67C48 /* RecommendCommonSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCommonSectionController.swift; sourceTree = "<group>"; };
+		E0BE00DA1F9C7C4100C67C48 /* NetworkTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		E0BE00DD1F9CBDA300C67C48 /* RecommendCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCardModel.swift; sourceTree = "<group>"; };
 		E0DF0EBE1F94FE6C00FA8903 /* Inke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0DF0EC11F94FE6C00FA8903 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0DF0EC31F94FE6C00FA8903 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +88,11 @@
 		E0DF0EF81F950BF600FA8903 /* FollowsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowsController.swift; sourceTree = "<group>"; };
 		E0DF0EFA1F950C0600FA8903 /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		E0DF0EFC1F950C5400FA8903 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E0F326211F9B0BC00011A013 /* RecommendLiveGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendLiveGroupCell.swift; sourceTree = "<group>"; };
+		E0F326221F9B0BC00011A013 /* RecommendLiveGroupCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendLiveGroupCell.xib; sourceTree = "<group>"; };
+		E0F326251F9B12120011A013 /* UIKit+HeroExamples.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIKit+HeroExamples.swift"; sourceTree = "<group>"; };
+		E0F326271F9B4F7B0011A013 /* RecommendLiveCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendLiveCell.swift; sourceTree = "<group>"; };
+		E0F326281F9B4F7B0011A013 /* RecommendLiveCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendLiveCell.xib; sourceTree = "<group>"; };
 		F1D116E9C4345948DB1D5064 /* Pods_Inke.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Inke.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -91,6 +113,8 @@
 			children = (
 				1C4324771F95A1AD006C2DEF /* GlobalFunc.swift */,
 				1CF61B0F1F96EC0A0055EC78 /* UIView+AB.swift */,
+				E0F326251F9B12120011A013 /* UIKit+HeroExamples.swift */,
+				E0BE00DA1F9C7C4100C67C48 /* NetworkTools.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -111,6 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				1CE7F8B31F99A85800AB94DF /* RecommendHeaderSectionController.swift */,
+				E0BE00D41F9C700C00C67C48 /* RecommendAdSectionController.swift */,
+				E0BE00D81F9C713000C67C48 /* RecommendCommonSectionController.swift */,
 			);
 			path = sectionController;
 			sourceTree = "<group>";
@@ -120,6 +146,12 @@
 			children = (
 				1CE7F8B61F99AA2E00AB94DF /* RecommdedHeaderCell.swift */,
 				1CE7F8B71F99AA2E00AB94DF /* RecommdedHeaderCell.xib */,
+				E0F326211F9B0BC00011A013 /* RecommendLiveGroupCell.swift */,
+				E0F326221F9B0BC00011A013 /* RecommendLiveGroupCell.xib */,
+				E0F326271F9B4F7B0011A013 /* RecommendLiveCell.swift */,
+				E0F326281F9B4F7B0011A013 /* RecommendLiveCell.xib */,
+				E0BE00D01F9C6EDF00C67C48 /* RecommendAdCell.swift */,
+				E0BE00D11F9C6EDF00C67C48 /* RecommendAdCell.xib */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -139,6 +171,14 @@
 				D9D7930B6B69C6D7487C1A57 /* Pods-Inke.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		E0BE00DC1F9CBD9100C67C48 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E0BE00DD1F9CBDA300C67C48 /* RecommendCardModel.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		E0DF0EB51F94FE6C00FA8903 = {
@@ -222,10 +262,10 @@
 		E0DF0ED81F9503FA00FA8903 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				E0BE00DC1F9CBD9100C67C48 /* model */,
 				1CE7F8B51F99A97900AB94DF /* views */,
 				1CE7F8B21F99A7DD00AB94DF /* sectionController */,
 				E0DF0ED91F9503FA00FA8903 /* controller */,
-				E0DF0EDA1F9503FA00FA8903 /* model */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -241,13 +281,6 @@
 				1CB245CA1F988A7100F92D29 /* LocalCityController.swift */,
 			);
 			path = controller;
-			sourceTree = "<group>";
-		};
-		E0DF0EDA1F9503FA00FA8903 /* model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = model;
 			sourceTree = "<group>";
 		};
 		E0DF0EDD1F9503FA00FA8903 /* Live */ = {
@@ -432,7 +465,10 @@
 				1CE7F8B91F99AA2E00AB94DF /* RecommdedHeaderCell.xib in Resources */,
 				1C4324811F95B422006C2DEF /* RootTabBar.xib in Resources */,
 				E0DF0ECC1F94FE6C00FA8903 /* LaunchScreen.storyboard in Resources */,
+				E0BE00D31F9C6EDF00C67C48 /* RecommendAdCell.xib in Resources */,
 				E0DF0EC91F94FE6C00FA8903 /* Assets.xcassets in Resources */,
+				E0F326241F9B0BC00011A013 /* RecommendLiveGroupCell.xib in Resources */,
+				E0F3262A1F9B4F7B0011A013 /* RecommendLiveCell.xib in Resources */,
 				E0DF0EC71F94FE6C00FA8903 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -455,7 +491,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D28BB599A52A279CDC597080 /* [CP] Copy Pods Resources */ = {
@@ -480,19 +516,23 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Inke/Pods-Inke-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IGListKit/IGListKit.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
-				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IGListKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -508,18 +548,25 @@
 			files = (
 				E0DF0EEF1F950B5500FA8903 /* BaseNavigationController.swift in Sources */,
 				1CB245C51F9889B200F92D29 /* VideoController.swift in Sources */,
+				E0BE00DB1F9C7C4100C67C48 /* NetworkTools.swift in Sources */,
+				E0BE00D21F9C6EDF00C67C48 /* RecommendAdCell.swift in Sources */,
+				E0F326261F9B12120011A013 /* UIKit+HeroExamples.swift in Sources */,
 				1CF61B101F96EC0A0055EC78 /* UIView+AB.swift in Sources */,
 				1CB245CB1F988A7100F92D29 /* LocalCityController.swift in Sources */,
 				E0DF0EF51F950BC100FA8903 /* NearController.swift in Sources */,
 				1CB245C91F988A5000F92D29 /* FoundController.swift in Sources */,
+				E0F326231F9B0BC00011A013 /* RecommendLiveGroupCell.swift in Sources */,
 				1C4324781F95A1AD006C2DEF /* GlobalFunc.swift in Sources */,
 				1C43247A1F95A935006C2DEF /* GlobalDefinition.swift in Sources */,
+				E0BE00D91F9C713000C67C48 /* RecommendCommonSectionController.swift in Sources */,
 				E0DF0EC41F94FE6C00FA8903 /* ViewController.swift in Sources */,
 				E0DF0EF71F950BDF00FA8903 /* LiveController.swift in Sources */,
 				1CB245C31F98898600F92D29 /* RecommendController.swift in Sources */,
 				E0DF0EF91F950BF600FA8903 /* FollowsController.swift in Sources */,
 				1CE7F8B81F99AA2E00AB94DF /* RecommdedHeaderCell.swift in Sources */,
 				E0DF0EFD1F950C5400FA8903 /* BaseViewController.swift in Sources */,
+				E0BE00DE1F9CBDA300C67C48 /* RecommendCardModel.swift in Sources */,
+				E0F326291F9B4F7B0011A013 /* RecommendLiveCell.swift in Sources */,
 				E0DF0EFB1F950C0600FA8903 /* ProfileController.swift in Sources */,
 				E0DF0EED1F950B0000FA8903 /* RootTabBarController.swift in Sources */,
 				1C43247F1F95B413006C2DEF /* RootTabBar.swift in Sources */,
@@ -527,6 +574,7 @@
 				1CE7F8B41F99A85800AB94DF /* RecommendHeaderSectionController.swift in Sources */,
 				E01315A61F97B59200788A28 /* ScrollSegmentView.swift in Sources */,
 				1CB245C71F9889E400F92D29 /* HotGameController.swift in Sources */,
+				E0BE00D51F9C700C00C67C48 /* RecommendAdSectionController.swift in Sources */,
 				E0DF0EC21F94FE6C00FA8903 /* AppDelegate.swift in Sources */,
 				E0DF0EF31F950BB100FA8903 /* HomeController.swift in Sources */,
 			);
