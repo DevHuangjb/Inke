@@ -23,6 +23,8 @@ class RecommendController: BaseViewController, ListAdapterDataSource {
 //        "2","0","1","0","0","3","0","1","1","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0"
 //    ]
     var data: [RecommendCardModel] = []
+    var test: [String] = ["1","2"]
+    var adModel : RecommendAdModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +41,12 @@ class RecommendController: BaseViewController, ListAdapterDataSource {
             }
             let json = JSON(temp)
             let cards = json["cards"].arrayValue
-            for card in cards {
+            for (idx,card) in cards.enumerated() {
+                if idx == 4 {
+                    self.adModel = RecommendAdModel(json: card)
+                    continue
+                }
+                
                 let cardModel = RecommendCardModel(json: card)
                 if cardModel.style == 1 || cardModel.style == 4 {
                     self.data.append(cardModel)
@@ -62,26 +69,39 @@ class RecommendController: BaseViewController, ListAdapterDataSource {
     // MARK:- ListAdapterDataSource
     
     func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
-//        return data.map { $0 as! ListDiffable}
-        var tempArr:Array = [Any]()
-        tempArr.append("header")
-        tempArr.append("ad")
+        let cards = RecommendCardArray()
+        let cardbottom = RecommendCardArray()
+
+        var items: [ListDiffable] = ["header" as ListDiffable]
         if data.count > 0 {
-            tempArr.append(data)
+            var top4:[RecommendCardModel] = []
+            for i in 0...3 {
+                top4.append(data[i])
+            }
+            cards.cards = top4
+            var dataBottom:[RecommendCardModel] = []
+            for i in 4..<data.count {
+                dataBottom.append(data[i])
+            }
+            cardbottom.cards = dataBottom
+            items.append(cards as ListDiffable)
+            if let admodel = adModel {
+                items.append(admodel as ListDiffable)
+            }
+            
+            items.append(cardbottom as ListDiffable)
         }
-        return tempArr.map { $0 as! ListDiffable}
+        
+        return items
     }
     
     func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
         
-        if let str: String = object as? String {
-            if str.hasPrefix("header"){
-                return RecommendHeaderSectionController()
-            }else if str.hasPrefix("ad") {
-                return RecommendAdSectionController()
-            }
+        if object is String {
+            return RecommendHeaderSectionController()
+        }else if object is RecommendAdModel {
+            return RecommendAdSectionController()
         }
-        
         return RecommendCommonSectionController()
     }
     

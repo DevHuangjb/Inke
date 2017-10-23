@@ -20,6 +20,8 @@
 		1CE7F8B41F99A85800AB94DF /* RecommendHeaderSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7F8B31F99A85800AB94DF /* RecommendHeaderSectionController.swift */; };
 		1CE7F8B81F99AA2E00AB94DF /* RecommdedHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7F8B61F99AA2E00AB94DF /* RecommdedHeaderCell.swift */; };
 		1CE7F8B91F99AA2E00AB94DF /* RecommdedHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CE7F8B71F99AA2E00AB94DF /* RecommdedHeaderCell.xib */; };
+		1CEC9EBC1F9DA00D008A6719 /* RecommendCardArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEC9EBB1F9DA00D008A6719 /* RecommendCardArray.swift */; };
+		1CEC9EBE1F9DCD47008A6719 /* RecommendAdModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEC9EBD1F9DCD47008A6719 /* RecommendAdModel.swift */; };
 		1CF61B101F96EC0A0055EC78 /* UIView+AB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF61B0F1F96EC0A0055EC78 /* UIView+AB.swift */; };
 		3D25474CA2104651702811E3 /* Pods_Inke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D116E9C4345948DB1D5064 /* Pods_Inke.framework */; };
 		E01315A61F97B59200788A28 /* ScrollSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01315A51F97B59200788A28 /* ScrollSegmentView.swift */; };
@@ -63,6 +65,8 @@
 		1CE7F8B31F99A85800AB94DF /* RecommendHeaderSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendHeaderSectionController.swift; sourceTree = "<group>"; };
 		1CE7F8B61F99AA2E00AB94DF /* RecommdedHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommdedHeaderCell.swift; sourceTree = "<group>"; };
 		1CE7F8B71F99AA2E00AB94DF /* RecommdedHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommdedHeaderCell.xib; sourceTree = "<group>"; };
+		1CEC9EBB1F9DA00D008A6719 /* RecommendCardArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCardArray.swift; sourceTree = "<group>"; };
+		1CEC9EBD1F9DCD47008A6719 /* RecommendAdModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendAdModel.swift; sourceTree = "<group>"; };
 		1CF61B0F1F96EC0A0055EC78 /* UIView+AB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AB.swift"; sourceTree = "<group>"; };
 		B1D6979AC0811A63F689C4EA /* Pods-Inke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Inke.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Inke/Pods-Inke.debug.xcconfig"; sourceTree = "<group>"; };
 		D9D7930B6B69C6D7487C1A57 /* Pods-Inke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Inke.release.xcconfig"; path = "Pods/Target Support Files/Pods-Inke/Pods-Inke.release.xcconfig"; sourceTree = "<group>"; };
@@ -177,6 +181,8 @@
 			isa = PBXGroup;
 			children = (
 				E0BE00DD1F9CBDA300C67C48 /* RecommendCardModel.swift */,
+				1CEC9EBB1F9DA00D008A6719 /* RecommendCardArray.swift */,
+				1CEC9EBD1F9DCD47008A6719 /* RecommendAdModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -551,7 +557,9 @@
 				E0BE00DB1F9C7C4100C67C48 /* NetworkTools.swift in Sources */,
 				E0BE00D21F9C6EDF00C67C48 /* RecommendAdCell.swift in Sources */,
 				E0F326261F9B12120011A013 /* UIKit+HeroExamples.swift in Sources */,
+				1CEC9EBE1F9DCD47008A6719 /* RecommendAdModel.swift in Sources */,
 				1CF61B101F96EC0A0055EC78 /* UIView+AB.swift in Sources */,
+				1CEC9EBC1F9DA00D008A6719 /* RecommendCardArray.swift in Sources */,
 				1CB245CB1F988A7100F92D29 /* LocalCityController.swift in Sources */,
 				E0DF0EF51F950BC100FA8903 /* NearController.swift in Sources */,
 				1CB245C91F988A5000F92D29 /* FoundController.swift in Sources */,

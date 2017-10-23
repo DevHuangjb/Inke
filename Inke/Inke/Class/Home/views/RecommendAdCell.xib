@@ -5,7 +5,7 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,9 +18,48 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rkt-5g-3FN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="delegate" destination="gTV-IL-0wX" id="0Rz-PR-whT"/>
+                        </connections>
+                    </scrollView>
+                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="YTB-an-50Z">
+                        <rect key="frame" x="0.0" y="110" width="375" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="MC2-fm-W7Y"/>
+                        </constraints>
+                        <color key="pageIndicatorTintColor" red="0.82745098039215681" green="0.82745098039215681" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="currentPageIndicatorTintColor" red="0.11764705882352941" green="0.88627450980392153" blue="0.60039605034722221" alpha="1" colorSpace="calibratedRGB"/>
+                    </pageControl>
+                </subviews>
             </view>
-            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="rkt-5g-3FN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="CF5-GU-slL"/>
+                <constraint firstAttribute="trailing" secondItem="YTB-an-50Z" secondAttribute="trailing" id="HQ8-Ty-xFA"/>
+                <constraint firstItem="YTB-an-50Z" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="KFJ-U8-63r"/>
+                <constraint firstAttribute="trailing" secondItem="rkt-5g-3FN" secondAttribute="trailing" id="R7h-Hl-m4Q"/>
+                <constraint firstItem="YTB-an-50Z" firstAttribute="top" secondItem="rkt-5g-3FN" secondAttribute="bottom" id="gtV-1g-WRr"/>
+                <constraint firstItem="rkt-5g-3FN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="i69-Pg-xmd"/>
+                <constraint firstAttribute="bottom" secondItem="YTB-an-50Z" secondAttribute="bottom" id="wUP-bZ-3FK"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="3"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="pageControl" destination="YTB-an-50Z" id="Y1f-Og-hvl"/>
+                <outlet property="scrollView" destination="rkt-5g-3FN" id="0PT-jV-7YX"/>
+            </connections>
+            <point key="canvasLocation" x="35.5" y="54"/>
         </collectionViewCell>
     </objects>
 </document>

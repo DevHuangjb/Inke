@@ -10,6 +10,9 @@ import UIKit
 import IGListKit
 
 class RecommendAdSectionController: ListSectionController {
+    
+    var model: RecommendAdModel?
+    
     override init() {
         super.init()
 //        minimumInteritemSpacing = 5
@@ -27,6 +30,14 @@ class RecommendAdSectionController: ListSectionController {
         guard let nibCell = collectionContext?.dequeueReusableCell(withNibName: "RecommendAdCell",bundle: nil,for: self,at: index) as? RecommendAdCell else {
             fatalError()
         }
+        nibCell.model = model
         return nibCell
+    }
+    
+    override func didUpdate(to object: Any) {
+        guard let objModel = object as? RecommendAdModel  else {
+            return
+        }
+        model = objModel
     }
 }

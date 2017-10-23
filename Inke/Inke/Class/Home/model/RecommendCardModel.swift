@@ -21,7 +21,7 @@ class RecommendCardModel: NSObject {
     var icon: String?
     var portrait: String?
     var subPortraits:[String] = []
-    
+    var numOfGroup: Int = 0
     init(json: JSON) {
         cover = json["cover"].dictionaryValue
         data = json["data"].dictionaryValue
@@ -47,21 +47,12 @@ class RecommendCardModel: NSObject {
                 }
                 continue
             }
+            if idx == 1 {
+                numOfGroup = elementsJson["text"].intValue
+            }
             subTitle += elementsJson["text"].stringValue
         }
-        print("====")
     }
 
 }
 
-extension RecommendCardModel: ListDiffable {
-    
-    func diffIdentifier() -> NSObjectProtocol {
-        return self
-    }
-    
-    func isEqual(toDiffableObject object: ListDiffable?) -> Bool {
-        return isEqual(object)
-    }
-    
-}

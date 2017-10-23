@@ -10,6 +10,9 @@ import UIKit
 import IGListKit
 
 class RecommendCommonSectionController: ListSectionController {
+    
+    var cardArray:RecommendCardArray?
+    
     override init() {
         super.init()
                 minimumInteritemSpacing = 5
@@ -18,7 +21,7 @@ class RecommendCommonSectionController: ListSectionController {
     }
     
     override func numberOfItems() -> Int {
-        return 4
+        return (cardArray?.cards.count)!
     }
     
     override func sizeForItem(at index: Int) -> CGSize {
@@ -28,9 +31,26 @@ class RecommendCommonSectionController: ListSectionController {
     
     override func cellForItem(at index: Int) -> UICollectionViewCell {
         
-        guard let nibCell = collectionContext?.dequeueReusableCell(withNibName: "RecommendLiveGroupCell",bundle: nil,for: self,at: index) as? RecommendLiveGroupCell else {
-            fatalError()
+        let model = cardArray?.cards[index]
+        if model?.style == 1 {
+            guard let nibCell = collectionContext?.dequeueReusableCell(withNibName: "RecommendLiveCell",bundle: nil,for: self,at: index) as? RecommendLiveCell else {
+                fatalError()
+            }
+            nibCell.model = model
+            return nibCell
+        }else{
+            guard let nibCell = collectionContext?.dequeueReusableCell(withNibName: "RecommendLiveGroupCell",bundle: nil,for: self,at: index) as? RecommendLiveGroupCell else {
+                fatalError()
+            }
+            nibCell.model = model
+            return nibCell
         }
-        return nibCell
+    }
+    
+    override func didUpdate(to object: Any) {
+        guard let objModel = object as? RecommendCardArray  else {
+            return
+        }
+        cardArray = objModel
     }
 }
