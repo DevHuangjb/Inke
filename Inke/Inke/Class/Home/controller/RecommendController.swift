@@ -25,6 +25,7 @@ class RecommendController: BaseViewController, ListAdapterDataSource {
     var data: [RecommendCardModel] = []
     var test: [String] = ["1","2"]
     var adModel : RecommendAdModel?
+    var topTotal = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,8 +43,10 @@ class RecommendController: BaseViewController, ListAdapterDataSource {
             let json = JSON(temp)
             let cards = json["cards"].arrayValue
             for (idx,card) in cards.enumerated() {
-                if idx == 4 {
+                let style = card["cover"]["style"].intValue
+                if style == 6 {
                     self.adModel = RecommendAdModel(json: card)
+                    self.topTotal = idx
                     continue
                 }
                 
@@ -75,12 +78,12 @@ class RecommendController: BaseViewController, ListAdapterDataSource {
         var items: [ListDiffable] = ["header" as ListDiffable]
         if data.count > 0 {
             var top4:[RecommendCardModel] = []
-            for i in 0...3 {
+            for i in 0...topTotal-1 {
                 top4.append(data[i])
             }
             cards.cards = top4
             var dataBottom:[RecommendCardModel] = []
-            for i in 4..<data.count {
+            for i in topTotal..<data.count {
                 dataBottom.append(data[i])
             }
             cardbottom.cards = dataBottom

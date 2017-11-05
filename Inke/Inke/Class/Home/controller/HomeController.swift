@@ -14,6 +14,11 @@ class HomeController: BaseViewController, UIGestureRecognizerDelegate{
     var contentView: SegmentContentView?
     var contentScrollView : UIScrollView?
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = false
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initUI()
@@ -28,7 +33,7 @@ class HomeController: BaseViewController, UIGestureRecognizerDelegate{
     func setupContentScrollView() {
         var vcs: [UIViewController] = []
         let vcClasses = [RecommendController.self,VideoController.self,HotGameController.self,FoundController.self,LocalCityController.self]
-        contentView = SegmentContentView(frame: CGRect(x: 0, y: TOP_HEIGHT, width: SCREEN_WIDTH, height: SCREEN_HEIGHT - TOP_HEIGHT - TAB_BAR_HEIGHT))
+        contentView = SegmentContentView(frame: CGRect(x: 0, y: TOP_HEIGHT, width: SCREEN_WIDTH, height: SCREEN_HEIGHT - TOP_HEIGHT))
         contentView?.segmentView = segmentView
         for vcType in vcClasses{
             let vc = vcType.init()

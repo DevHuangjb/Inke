@@ -36,7 +36,7 @@ class RootTabBar: UIView {
     var selectedBtn : UIButton?
     weak var delegate:RootTabBarDelegate?
     
-    static func GetView() -> RootTabBar {
+    class func GetView() -> RootTabBar {
         return Bundle.main.loadNibNamed("RootTabBar", owner: nil, options: nil)?.first as! RootTabBar
     }
     

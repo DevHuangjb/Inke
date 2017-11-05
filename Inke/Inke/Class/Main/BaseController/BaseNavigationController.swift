@@ -16,5 +16,7 @@ class BaseNavigationController: UINavigationController {
         //设置导航栏为半透明,从而navController的subControllers的view可以从屏幕顶部开始，如果设置为false则subControllers的view下移64
         self.navigationBar.isTranslucent = true
     }
+    
+    
 
 }

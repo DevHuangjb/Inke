@@ -53,4 +53,11 @@ class RecommendCommonSectionController: ListSectionController {
         }
         cardArray = objModel
     }
+    
+    override func didSelectItem(at index: Int) {
+        let liveRoom = LiveRoomController()
+        liveRoom.model = cardArray?.cards[index]
+//        viewController?.navigationController?.pushViewController(liveRoom, animated: true)
+        viewController?.present(liveRoom, animated: true, completion: nil)
+    }
 }

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="OwnerView" customModule="Inke" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="34"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="ZkK-g1-Gir">
+                    <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="34" id="56I-6O-6p1"/>
+                        <constraint firstAttribute="height" constant="34" id="XVm-PI-NSH"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="17"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主播名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQC-eh-Vy0">
+                    <rect key="frame" x="44" y="5" width="31" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8909" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gi-Vj-3nX">
+                    <rect key="frame" x="44" y="17" width="26" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.47058823529411764" green="0.47058823529411764" blue="0.47058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZkK-g1-Gir" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="S1l-54-GZU"/>
+                <constraint firstItem="0gi-Vj-3nX" firstAttribute="leading" secondItem="ZkK-g1-Gir" secondAttribute="trailing" constant="10" id="Yaa-5t-wce"/>
+                <constraint firstItem="PQC-eh-Vy0" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="fsO-VA-6zL"/>
+                <constraint firstAttribute="bottom" secondItem="0gi-Vj-3nX" secondAttribute="bottom" constant="5" id="vMP-x7-C5F"/>
+                <constraint firstItem="ZkK-g1-Gir" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="wxU-VY-t3y"/>
+                <constraint firstItem="PQC-eh-Vy0" firstAttribute="leading" secondItem="ZkK-g1-Gir" secondAttribute="trailing" constant="10" id="y0e-yW-vig"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="17"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="iconView" destination="ZkK-g1-Gir" id="0EB-BO-QnI"/>
+                <outlet property="nameLabel" destination="PQC-eh-Vy0" id="AYK-w6-hdk"/>
+                <outlet property="totalLabel" destination="0gi-Vj-3nX" id="Pn8-Cy-2fl"/>
+            </connections>
+            <point key="canvasLocation" x="25.5" y="53"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="placeholder" width="375" height="370"/>
+    </resources>
+</document>

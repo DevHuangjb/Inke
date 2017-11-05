@@ -10,6 +10,8 @@ import UIKit
 
 class RootTabBarController: UITabBarController {
     
+    var tabbar: RootTabBar?
+    
     let viewControllerNames = ["HomeController","NearController","FollowsController","ProfileController"]
     
     override func viewDidLoad() {
@@ -19,7 +21,6 @@ class RootTabBarController: UITabBarController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        setupTabBar()
     }
     
     /// 设置ui
@@ -31,10 +32,10 @@ class RootTabBarController: UITabBarController {
     /// 设置Tabbar
     func setupTabBar() {
         tabBar.isHidden = true
-        let tabbar = RootTabBar.GetView()
-        view.addSubview(tabbar)
-        tabbar.frame = CGRect(x: 0, y: SCREEN_HEIGHT - TAB_BAR_HEIGHT, width:SCREEN_WIDTH , height:TAB_BAR_HEIGHT)
-        tabbar.delegate = self
+        tabbar = RootTabBar.GetView()
+        view.addSubview(tabbar!)
+        tabbar?.frame = CGRect(x: 0, y: SCREEN_HEIGHT - TAB_BAR_HEIGHT, width:SCREEN_WIDTH , height:TAB_BAR_HEIGHT)
+        tabbar?.delegate = self
     }
     
     /// 添加子视图
@@ -45,7 +46,18 @@ class RootTabBarController: UITabBarController {
             }
             let vc = vcType.init()
             let nav = BaseNavigationController.init(rootViewController: vc)
+            nav.delegate = self
             addChildViewController(nav)
+        }
+    }
+    
+    func setTabBarHider(hidden: Bool) {
+        UIView.animate(withDuration: 0.25) {
+            if hidden {
+                self.tabbar?.y = SCREEN_HEIGHT + 30
+            }else {
+                self.tabbar?.y = SCREEN_HEIGHT - TAB_BAR_HEIGHT
+            }
         }
     }
 }
@@ -53,5 +65,11 @@ class RootTabBarController: UITabBarController {
 extension RootTabBarController: RootTabBarDelegate {
     func rootTabBarSelectedIndex(index: Int){
         selectedIndex = index
+    }
+}
+
+extension RootTabBarController: UINavigationControllerDelegate{
+    func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
+        setTabBarHider(hidden: navigationController.viewControllers.count > 1)
     }
 }
